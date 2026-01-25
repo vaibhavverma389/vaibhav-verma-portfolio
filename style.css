@@ -134,7 +134,7 @@ profile-photo .img{
   width: 100%;
   transition: 0.5s;
 }
-.FirstElement .profile-photo img{
+.FirstElement .profile-photo img:hover{
   transform: scale(1.2);
   
 }
