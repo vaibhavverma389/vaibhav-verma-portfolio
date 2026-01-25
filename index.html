@@ -243,16 +243,14 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<!-- EmailJS SDK -->
+
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-/* ========== INITIALIZE EMAILJS ========== */
 (function () {
-    emailjs.init("pw5NJqkOetfOeDEQS"); // 🔁 replace with your NEW public key
+    emailjs.init("pw5NJqkOetfOeDEQS"); 
 })();
 
-/* ========== FORM HANDLING ========== */
 const form = document.getElementById("contact-form");
 const msg = document.getElementById("msg");
 
@@ -262,8 +260,8 @@ form.addEventListener("submit", function (e) {
     msg.innerHTML = "Sending message... ⏳";
 
     emailjs.sendForm(
-        "service_nlb44xl",   // 🔁 replace
-        "template_abypae6",  // 🔁 replace
+        "service_nlb44xl",   
+        "template_abypae6",  
         this
     )
     .then(function () {
