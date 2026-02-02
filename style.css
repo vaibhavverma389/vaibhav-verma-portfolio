@@ -794,3 +794,33 @@ profile-photo .img{
     grid-template-columns: 1fr;
   }
 }
+.project-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+/* Compact link style */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fed700;
+    text-decoration: none;
+    padding: 4px 0;   /* 👈 small click area */
+    transition: 0.3s;
+}
+
+/* GitHub thoda muted */
+.project-link.github {
+    color: #ddd;
+}
+
+/* Hover effect */
+.project-link:hover {
+    color: #fff;
+    transform: translateY(-1px);
+}
