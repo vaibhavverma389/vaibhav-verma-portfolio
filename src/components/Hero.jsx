@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section className="FirstElement" id="home">
-      <motion.div 
+      <motion.div
         className="profile-photo"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -14,7 +14,7 @@ const Hero = () => {
         <img src="/files/photo.webp" alt="Vaibhav Verma Profile Picture" />
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="profile-text"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -25,10 +25,10 @@ const Hero = () => {
         <h1>
           Hi, I'm <span className="text-gradient">Vaibhav Verma</span>
         </h1>
-        <h2 className="role-title">Full-Stack Developer & Aspiring SDE</h2>
+        <h2 className="role-title">Backend Developer | Aspiring Software Engineer</h2>
 
         <p>
-          I engineer scalable, high-performance web applications and solve complex problems with efficient algorithms. 
+          I engineer scalable, high-performance web applications and solve complex problems with efficient algorithms.
           Passionate about clean code, modern architecture, and creating intuitive user experiences.
         </p>
 
