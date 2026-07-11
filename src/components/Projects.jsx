@@ -143,6 +143,42 @@ const Projects = () => {
               </a>
             </div>
           </motion.div>
+          {/* Project: Link Shortener */}
+<motion.div className="project" variants={itemVariants}>
+  <i className="fa fa-link"></i>
+  <h4>Dynamic Link Shortener & Analytics Dashboard</h4>
+
+  <div className="tech-stack">
+    <span>React</span>
+    <span>Node.js</span>
+    <span>Express</span>
+    <span>MongoDB</span>
+    <span>Vite</span>
+    <span>CSS (Glassmorphic)</span>
+  </div>
+
+  <p>
+    Developed a premium full-stack URL shortening web application featuring a stunning glassmorphic UI. 
+    Built a secure REST API for link creation with support for custom aliases/slugs.
+    Implemented real-time click tracking, dynamic SVG QR code generation with downloader, and interactive toast notifications.
+  </p>
+
+  <ul className="project-features">
+    <li>Custom Alias & Dynamic URL Shortening</li>
+    <li>Real-time Click Analytics & Tracking</li>
+    <li>Dynamic SVG QR Code Generation & Downloader</li>
+  </ul>
+
+  <div className="project-links">
+    <a href="https://linkshortner-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
+      <i className="fa fa-globe"></i> Live
+    </a>
+    <a href="https://github.com/vaibhavverma389/Linkshortner" target="_blank" rel="noreferrer" className="project-btn github">
+      <i className="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</motion.div>
+
 
         </motion.div>
       </div>
