@@ -33,7 +33,7 @@ const Hero = () => {
         </p>
 
         <div className="btn-group">
-          <a href="/files/Vaibhav_Verma_MERN_Developer_Resume.pdf" className="resume-btn" download>
+          <a href="/files/Vaibhav_Verma_Resume.pdf" className="resume-btn" download>
             <i className="fa fa-download" aria-hidden="true"></i> Download Resume
           </a>
 
