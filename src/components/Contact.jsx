@@ -58,7 +58,7 @@ const Contact = () => {
               className={msg.type} 
               aria-live="polite"
               style={{
-                color: msg.type === 'success' ? '#fed700' : msg.type === 'error' ? 'red' : 'white'
+                color: msg.type === 'success' ? '#4ade80' : msg.type === 'error' ? '#f87171' : 'var(--text)'
               }}
             >
               {msg.text}
