@@ -143,42 +143,116 @@ const Projects = () => {
               </a>
             </div>
           </motion.div>
-          {/* Project: Link Shortener */}
-<motion.div className="project" variants={itemVariants}>
-  <i className="fa fa-link"></i>
-  <h4>Dynamic Link Shortener & Analytics Dashboard</h4>
 
-  <div className="tech-stack">
-    <span>React</span>
-    <span>Node.js</span>
-    <span>Express</span>
-    <span>MongoDB</span>
-    <span>Vite</span>
-    <span>CSS (Glassmorphic)</span>
-  </div>
+          {/* Project 4: Link Shortener */}
+          <motion.div className="project" variants={itemVariants}>
+            <i className="fa fa-link"></i>
+            <h4>Dynamic Link Shortener & Analytics Dashboard</h4>
 
-  <p>
-    Developed a premium full-stack URL shortening web application featuring a stunning glassmorphic UI. 
-    Built a secure REST API for link creation with support for custom aliases/slugs.
-    Implemented real-time click tracking, dynamic SVG QR code generation with downloader, and interactive toast notifications.
-  </p>
+            <div className="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Vite</span>
+              <span>CSS (Glassmorphic)</span>
+            </div>
 
-  <ul className="project-features">
-    <li>Custom Alias & Dynamic URL Shortening</li>
-    <li>Real-time Click Analytics & Tracking</li>
-    <li>Dynamic SVG QR Code Generation & Downloader</li>
-  </ul>
+            <p>
+              Developed a premium full-stack URL shortening web application featuring a stunning glassmorphic UI.
+              Built a secure REST API for link creation with support for custom aliases/slugs.
+              Implemented real-time click tracking, dynamic SVG QR code generation with downloader, and interactive toast notifications.
+            </p>
 
-  <div className="project-links">
-    <a href="https://linkshortner-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
-      <i className="fa fa-globe"></i> Live
-    </a>
-    <a href="https://github.com/vaibhavverma389/Linkshortner" target="_blank" rel="noreferrer" className="project-btn github">
-      <i className="fa-brands fa-github"></i> GitHub
-    </a>
-  </div>
-</motion.div>
+            <ul className="project-features">
+              <li>Custom Alias & Dynamic URL Shortening</li>
+              <li>Real-time Click Analytics & Tracking</li>
+              <li>Dynamic SVG QR Code Generation & Downloader</li>
+            </ul>
 
+            <div className="project-links">
+              <a href="https://linkshortner-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
+                <i className="fa fa-globe"></i> Live
+              </a>
+              <a href="https://github.com/vaibhavverma389/Linkshortner" target="_blank" rel="noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Project 5: Student Management System */}
+          <motion.div className="project" variants={itemVariants}>
+            <i className="fa fa-user-graduate"></i>
+            <h4>Student Management System</h4>
+
+            <div className="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+
+            <p>
+              Built a Student Management System supporting full CRUD operations for student records,
+              with clean form validation and a modern dark-themed, user-friendly interface.
+              Designed for easy record management, searching, and filtering across departments.
+            </p>
+
+            <ul className="project-features">
+              <li>Add, edit, delete & search student records</li>
+              <li>Filter by department and minimum marks</li>
+              <li>Unique roll number & numeric field validation</li>
+              <li>Structured table view with dark theme UI</li>
+            </ul>
+
+            <div className="project-links">
+              <a href="https://student-management-system-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
+                <i className="fa fa-globe"></i> Live
+              </a>
+              <a href="https://github.com/vaibhavverma389/student-management-system" target="_blank" rel="noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Project 6: E-Commerce Sales Analytics Dashboard */}
+          <motion.div className="project" variants={itemVariants}>
+            <i className="fa fa-chart-line"></i>
+            <h4>E-Commerce Sales Analytics Dashboard</h4>
+
+            <div className="tech-stack">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Recharts</span>
+            </div>
+
+            <p>
+              Cleaned and analyzed a large e-commerce transaction dataset using Python/Pandas,
+              transforming raw order data into reusable analytical datasets and KPIs.
+              Built an interactive React + FastAPI dashboard covering revenue trends, customer demographics,
+              regional performance, payment analysis, order status, and product insights.
+            </p>
+
+            <ul className="project-features">
+              <li>Revenue, KPI & sales trend analytics</li>
+              <li>Dynamic filtering, search & pagination</li>
+              <li>Customer, regional & payment insights</li>
+              <li>Cancellation/return rate & product performance tracking</li>
+            </ul>
+
+            <div className="project-links">
+              {/* TODO: replace with your actual deployed link */}
+              <a href="#" target="_blank" rel="noreferrer" className="project-btn live">
+                <i className="fa fa-globe"></i> Live
+              </a>
+              {/* TODO: replace with your actual GitHub repo link */}
+              <a href="#" target="_blank" rel="noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </motion.div>
 
         </motion.div>
       </div>
