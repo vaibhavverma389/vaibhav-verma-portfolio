@@ -244,11 +244,11 @@ const Projects = () => {
 
             <div className="project-links">
               {/* TODO: replace with your actual deployed link */}
-              <a href="#" target="_blank" rel="noreferrer" className="project-btn live">
+              <a href="https://ecommerce-sales-analytics-dashboard-ten.vercel.app" target="_blank" rel="noreferrer" className="project-btn live">
                 <i className="fa fa-globe"></i> Live
               </a>
               {/* TODO: replace with your actual GitHub repo link */}
-              <a href="#" target="_blank" rel="noreferrer" className="project-btn github">
+              <a href="https://github.com/vaibhavverma389/ecommerce-sales-analytics-dashboard" target="_blank" rel="noreferrer" className="project-btn github">
                 <i className="fa-brands fa-github"></i> GitHub
               </a>
             </div>
