@@ -27,27 +27,51 @@ const Header = () => {
     >
       <div className="container">
         <div className="header">
-          <a href="#" className="logo">
-            <h2>Vaibhav Verma</h2>
+          <a href="#home" className="logo" aria-label="Vaibhav Verma Home">
+            <span className="logo-badge" aria-hidden="true">&lt;V/&gt;</span>
+            <span className="logo-name">Vaibhav Verma</span>
+            <span className="logo-role">Full Stack</span>
           </a>
 
           <ul className={`navbar ${menuOpen ? 'active' : ''}`}>
             <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-            <li><a href="#education" onClick={() => setMenuOpen(false)}>Education</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+            <li><a href="#education" onClick={() => setMenuOpen(false)}>Education</a></li>
+            <li><a href="#dsa" onClick={() => setMenuOpen(false)}>Problem Solving</a></li>
+            <li><a href="#ai-tools" onClick={() => setMenuOpen(false)}>AI Tools</a></li>
             <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+            <li className="mobile-resume-nav">
+              <a 
+                href="/files/Vaibhav_Verma_Resume_SDE.pdf" 
+                download="Vaibhav_Verma_Resume_SDE.pdf"
+                className="btn-resume-nav"
+                onClick={() => setMenuOpen(false)}
+              >
+                <i className="fa fa-download" aria-hidden="true"></i> Resume
+              </a>
+            </li>
           </ul>
 
-          <button 
-            className="menu_icon" 
-            aria-label="Toggle navigation menu"
-            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <i className={`fa ${menuOpen ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"></i>
-          </button>
+          <div className="header-actions">
+            <a 
+              href="/files/Vaibhav_Verma_Resume_SDE.pdf" 
+              download="Vaibhav_Verma_Resume_SDE.pdf"
+              className="btn-resume-nav desktop-only"
+            >
+              <i className="fa fa-download" aria-hidden="true"></i> Resume
+            </a>
+
+            <button 
+              className="menu_icon" 
+              aria-label="Toggle navigation menu"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <i className={`fa ${menuOpen ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
       </div>
     </motion.header>

@@ -106,6 +106,19 @@ const Skills = () => {
             </div>
           </motion.div>
 
+          {/* AI Development Tools */}
+          <motion.div className="skills-card" variants={itemVariants}>
+            <h3>AI Assisted Tools</h3>
+            <div className="skills-grid">
+              <span>ChatGPT</span>
+              <span>Gemini</span>
+              <span>GitHub Copilot</span>
+              <span>Claude</span>
+              <span>Codex</span>
+              <span>Antigravity</span>
+            </div>
+          </motion.div>
+
         </motion.div>
       </div>
     </section>
