@@ -54,20 +54,21 @@ const Education = () => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="title">Training</h3>
+            <h3 className="title">Internship</h3>
             <div className="timeline">
 
               <div className="timeline-item">
                 <div className="circle-dot"></div>
-                <h3 className="timeline-title">Web Development Training</h3>
+                <h3 className="timeline-title">Full Stack Developer Intern</h3>
                 <h4 className="timeline-title">GLA University, Mathura</h4>
                 <h4 className="timeline-title">
                   <i className="fa fa-calendar" aria-hidden="true"></i> June 2025 – July 2025
                 </h4>
                 <p className="timeline-text">
-                  Hands-on experience in HTML, CSS, JavaScript, DOM manipulation,
-                  responsive design, and form validation.
-                  Built a full-stack project “Smart Bus Booking System”.
+                  Built responsive interfaces with HTML, CSS and JavaScript (DOM
+                  manipulation, form validation), designed backend APIs, and worked
+                  across requirement analysis, UI design and QA testing.
+                  Shipped the full-stack “Smart Bus Booking System” as the capstone project.
                 </p>
               </div>
 

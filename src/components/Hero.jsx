@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LEETCODE_SOLVED, LEETCODE_COUNT, RESUME_PATH, RESUME_NAME } from '../data/site';
 
 const Hero = () => {
   return (
@@ -14,14 +15,14 @@ const Hero = () => {
         >
           <div className="hero-status-pill">
             <span className="status-dot"></span>
-            <span>Available for Full Stack &amp; Software Engineering Roles</span>
+            <span>Open to Internships &amp; Full-Time Software Roles</span>
           </div>
 
           <p className="hero-greeting">Hi, I'm Vaibhav Verma</p>
           <h1 className="hero-heading">
             Full Stack Developer building <span className="text-gradient">scalable &amp; user-focused</span> web applications.
           </h1>
-          <h2 className="role-title">MERN Stack | REST APIs | DSA Practitioner (355+ Solved)</h2>
+          <h2 className="role-title">MERN Stack | REST APIs | DSA Practitioner ({LEETCODE_SOLVED} Solved)</h2>
 
           <p className="hero-description">
             I engineer modern web applications using the MERN stack, RESTful micro-architectures, databases, and AI-powered development tools. Focused on high-performance backend systems, clean code, and intuitive user experiences.
@@ -32,7 +33,7 @@ const Hero = () => {
               View Projects <i className="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
 
-            <a href="/files/Vaibhav_Verma_Resume_SDE.pdf" className="resume-btn" download="Vaibhav_Verma_Resume_SDE.pdf">
+            <a href={RESUME_PATH} className="resume-btn" download={RESUME_NAME}>
               <i className="fa fa-download" aria-hidden="true"></i> Download Resume
             </a>
           </div>
@@ -46,9 +47,9 @@ const Hero = () => {
               <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
               <span>LinkedIn</span>
             </a>
-            <a href="https://leetcode.com/vaibhavverma389/" aria-label="LeetCode" target="_blank" rel="noreferrer" title="LeetCode Profile (355+ Solved)">
+            <a href="https://leetcode.com/vaibhavverma389/" aria-label="LeetCode" target="_blank" rel="noreferrer" title={`LeetCode Profile (${LEETCODE_SOLVED} Solved)`}>
               <i className="fa fa-code" aria-hidden="true"></i>
-              <span>LeetCode (355+)</span>
+              <span>LeetCode ({LEETCODE_SOLVED})</span>
             </a>
             <a href="mailto:vaibhav.verma.sde@gmail.com" aria-label="Email" title="Send Email">
               <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -75,7 +76,7 @@ const Hero = () => {
 
           {/* Profile Photo Avatar Frame */}
           <div className="profile-photo-wrap">
-            <img src="/files/photo.webp" alt="Vaibhav Verma Profile Picture" className="hero-avatar-img" />
+            <img src="/files/photo.webp" alt="Vaibhav Verma Profile Picture" className="hero-avatar-img" width="900" height="900" fetchpriority="high" decoding="async" />
           </div>
 
           {/* Code Window */}
@@ -99,7 +100,7 @@ const Hero = () => {
               <span className="code-line">&nbsp;&nbsp;<span className="token-property">coreStack</span>: [<span className="token-string">"MongoDB"</span>, <span className="token-string">"Express"</span>, <span className="token-string">"React"</span>, <span className="token-string">"Node"</span>],</span>
               <span className="code-line">&nbsp;&nbsp;<span className="token-property">problemSolving</span>: &#123;</span>
               <span className="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span className="token-property">platform</span>: <span className="token-string">"LeetCode"</span>,</span>
-              <span className="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span className="token-property">solvedCount</span>: <span className="token-number">355</span>,</span>
+              <span className="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span className="token-property">solvedCount</span>: <span className="token-number">{LEETCODE_COUNT}</span>,</span>
               <span className="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span className="token-property">focus</span>: <span className="token-string">"DSA &amp; Optimization"</span></span>
               <span className="code-line">&nbsp;&nbsp;&#125;,</span>
               <span className="code-line">&nbsp;&nbsp;<span className="token-property">methodology</span>: <span className="token-string">"AI-Assisted Velocity"</span>,</span>
@@ -113,7 +114,7 @@ const Hero = () => {
             <div className="floating-badge-icon">⚡</div>
             <div>
               <div className="floating-badge-label">Algorithmic Base</div>
-              <div className="floating-badge-val">355+ Problems Solved</div>
+              <div className="floating-badge-val">{LEETCODE_SOLVED} Problems Solved</div>
             </div>
           </div>
         </motion.div>

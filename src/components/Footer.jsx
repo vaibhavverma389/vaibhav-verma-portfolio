@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LEETCODE_SOLVED, RESUME_PATH, RESUME_NAME } from '../data/site';
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <span className="footer-title">Vaibhav Verma</span>
-            <span className="footer-tagline">Full Stack Developer &bull; MERN Stack &bull; 355+ LeetCode DSA</span>
+            <span className="footer-tagline">Full Stack Developer &bull; MERN Stack &bull; {LEETCODE_SOLVED} LeetCode DSA</span>
           </div>
 
           <ul className="footer-links" aria-label="Footer navigation">
@@ -26,7 +27,7 @@ const Footer = () => {
             <li><a href="#dsa">Problem Solving</a></li>
             <li><a href="#ai-tools">AI Tools</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/files/Vaibhav_Verma_Resume_SDE.pdf" download="Vaibhav_Verma_Resume_SDE.pdf">Resume (PDF)</a></li>
+            <li><a href={RESUME_PATH} download={RESUME_NAME}>Resume (PDF)</a></li>
           </ul>
         </div>
 

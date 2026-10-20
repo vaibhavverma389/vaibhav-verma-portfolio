@@ -13,12 +13,13 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+      <a href="#main" className="skip-link">Skip to content</a>
       <div className="bg-orbs">
         <div className="orb orb-1"></div>
         <div className="orb orb-2"></div>
       </div>
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <About />
         <Skills />

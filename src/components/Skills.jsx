@@ -47,6 +47,7 @@ const Skills = () => {
               <span>Express.js</span>
               <span>REST API Design</span>
               <span>Authentication (JWT, Passport.js)</span>
+              <span>Role-Based Access Control (RBAC)</span>
               <span>Middleware & Routing</span>
               <span>Error Handling</span>
             </div>
@@ -56,7 +57,7 @@ const Skills = () => {
           <motion.div className="skills-card" variants={itemVariants}>
             <h3>Programming Languages</h3>
             <div className="skills-grid">
-              <span>JavaScript (Advanced)</span>
+              <span>JavaScript (ES6+)</span>
               <span>Java</span>
               <span>Python</span>
             </div>
@@ -78,6 +79,7 @@ const Skills = () => {
             <h3>Frontend (Supporting)</h3>
             <div className="skills-grid">
               <span>React.js</span>
+              <span>Next.js</span>
               <span>HTML</span>
               <span>CSS</span>
             </div>
@@ -92,6 +94,7 @@ const Skills = () => {
               <span>Postman</span>
               <span>Vercel</span>
               <span>Render</span>
+              <span>AWS (EC2, S3, IAM)</span>
             </div>
           </motion.div>
 

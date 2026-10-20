@@ -60,7 +60,8 @@ const Projects = () => {
 
             <ul className="project-features">
               <li>Farmer & trader marketplace</li>
-              <li>Real-time product listings</li>
+              <li>Real-time bidding for transparent price discovery</li>
+              <li>~25% faster API responses via MongoDB indexing</li>
               <li>AI-based price prediction</li>
               <li>Secure backend with REST APIs</li>
             </ul>
@@ -96,11 +97,11 @@ const Projects = () => {
             <ul className="project-features">
               <li>Booking workflow system</li>
               <li>REST API architecture</li>
-              <li>Database optimization</li>
+              <li>Database optimization (~30% lower API latency)</li>
             </ul>
 
             <div className="project-links">
-              <a href="https://bus-bookings-project.vercel.app" target="_blank" rel="noreferrer" className="project-btn live">
+              <a href="https://www.thesmartbu.me" target="_blank" rel="noreferrer" className="project-btn live">
                 <i className="fa fa-globe"></i> Live
               </a>
               <a href="https://github.com/vaibhavverma389/bus_bookings" target="_blank" rel="noreferrer" className="project-btn github">
@@ -243,11 +244,9 @@ const Projects = () => {
             </ul>
 
             <div className="project-links">
-              {/* TODO: replace with your actual deployed link */}
               <a href="https://ecommerce-sales-analytics-dashboard-ten.vercel.app" target="_blank" rel="noreferrer" className="project-btn live">
                 <i className="fa fa-globe"></i> Live
               </a>
-              {/* TODO: replace with your actual GitHub repo link */}
               <a href="https://github.com/vaibhavverma389/ecommerce-sales-analytics-dashboard" target="_blank" rel="noreferrer" className="project-btn github">
                 <i className="fa-brands fa-github"></i> GitHub
               </a>

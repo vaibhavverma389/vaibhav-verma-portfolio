@@ -1,0 +1,80 @@
+/* ---------- Accessibility & polish additions ---------- */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 12px; }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+section[id] { scroll-margin-top: 80px; }
+
+/* DSA focus areas (replaces the old percentage bars) */
+.dsa-focus-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.dsa-focus-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.dsa-chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.dsa-chip {
+  padding: 4px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 999px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Layout fixes ---------- */
+/* Footer: the nested .container used a fixed 1200px width inside a 1000px footer -> horizontal scroll */
+.footer .container,
+.footer-container { width: 100%; max-width: 100%; padding-left: 0; padding-right: 0; }
+
+/* Hero: let grid children shrink so the nowrap code window never widens the page on phones */
+.hero-container-layout > * { min-width: 0; }
+.code-window { max-width: 100%; }
+.code-body { overflow-x: auto; }
+
+/* Tighter wrapping for the role line under the hero heading */
+.role-title { line-height: 1.35; }
+
+html, body { max-width: 100%; }
+
+/* Status pill should hug its text instead of stretching across the column */
+.hero-status-pill { width: fit-content; max-width: 100%; }
+@media (max-width: 992px) { .hero-status-pill { margin-left: auto; margin-right: auto; } }
+
+/* Headings were rendering with line-height ~1 and overlapping when they wrap on phones */
+.section-heading, .dsa-counter, .hero-heading { line-height: 1.25; }
+
+/* Not-yet-revealed sections start offset sideways (framer-motion x: ±40); clip so they never create horizontal scroll */
+.App { overflow-x: clip; }

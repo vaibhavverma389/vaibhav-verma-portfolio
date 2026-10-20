@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LEETCODE_SOLVED } from '../data/site';
 
 const ProblemSolving = () => {
   const containerVariants = {
@@ -14,6 +15,13 @@ const ProblemSolving = () => {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
+
+  const focusAreas = [
+    { name: 'Arrays, Strings & Two Pointers', tags: ['Sliding window', 'Prefix sums', 'Hashing'] },
+    { name: 'Binary Search & Linked Lists', tags: ['Search on answer', 'Fast/slow pointers', 'Reversal'] },
+    { name: 'Trees, Graphs & Traversals', tags: ['DFS / BFS', 'BST', 'Topological sort'] },
+    { name: 'Dynamic Programming & Greedy', tags: ['Memoization', 'Tabulation', 'Intervals'] }
+  ];
 
   const topics = [
     {
@@ -151,8 +159,8 @@ const ProblemSolving = () => {
         >
           <div className="dsa-hero-layout">
             <div className="dsa-headline-wrap">
-              <span className="badge badge-cyan">Verified Practice Milestone</span>
-              <div className="dsa-counter">355+ Problems Solved</div>
+              <span className="badge badge-cyan">LeetCode Milestone</span>
+              <div className="dsa-counter">{LEETCODE_SOLVED} Problems Solved</div>
               <p className="dsa-subtext">
                 Continuous problem-solving on LeetCode, strengthening core computer science skills in optimal time complexity, memory constraints, recursion, and dynamic programming state transitions.
               </p>
@@ -168,47 +176,18 @@ const ProblemSolving = () => {
               </div>
             </div>
 
-            {/* Focus Metrics with Animated Bars */}
+            {/* Practice focus areas */}
             <div className="dsa-stats-column">
-              <div className="dsa-stat-row">
-                <div className="dsa-stat-info">
-                  <span className="dsa-stat-name">Arrays, Strings &amp; Two Pointers</span>
-                  <span className="dsa-stat-val">Primary Mastery</span>
+              {focusAreas.map((f) => (
+                <div className="dsa-focus-row" key={f.name}>
+                  <span className="dsa-stat-name">{f.name}</span>
+                  <div className="dsa-chip-row">
+                    {f.tags.map((tg) => (
+                      <span className="dsa-chip" key={tg}>{tg}</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="progress-track">
-                  <div className="progress-fill progress-p1" style={{ width: '92%' }}></div>
-                </div>
-              </div>
-
-              <div className="dsa-stat-row">
-                <div className="dsa-stat-info">
-                  <span className="dsa-stat-name">Binary Search &amp; Linked Lists</span>
-                  <span className="dsa-stat-val">High Proficiency</span>
-                </div>
-                <div className="progress-track">
-                  <div className="progress-fill progress-p2" style={{ width: '85%' }}></div>
-                </div>
-              </div>
-
-              <div className="dsa-stat-row">
-                <div className="dsa-stat-info">
-                  <span className="dsa-stat-name">Trees, Graphs &amp; Traversals</span>
-                  <span className="dsa-stat-val">Core Strength</span>
-                </div>
-                <div className="progress-track">
-                  <div className="progress-fill progress-p3" style={{ width: '78%' }}></div>
-                </div>
-              </div>
-
-              <div className="dsa-stat-row">
-                <div className="dsa-stat-info">
-                  <span className="dsa-stat-name">Dynamic Programming &amp; Greedy</span>
-                  <span className="dsa-stat-val">Active Practice</span>
-                </div>
-                <div className="progress-track">
-                  <div className="progress-fill progress-p4" style={{ width: '68%' }}></div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </motion.div>

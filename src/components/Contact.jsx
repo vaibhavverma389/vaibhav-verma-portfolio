@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { LEETCODE_SOLVED } from '../data/site';
 
 const Contact = () => {
   const form = useRef();
@@ -85,7 +86,7 @@ const Contact = () => {
               </div>
               <div className="contact-card-text">
                 <span className="contact-card-label">LeetCode</span>
-                <span className="contact-card-value">leetcode.com/vaibhavverma389 (355+)</span>
+                <span className="contact-card-value">leetcode.com/vaibhavverma389 ({LEETCODE_SOLVED})</span>
               </div>
             </a>
           </motion.div>

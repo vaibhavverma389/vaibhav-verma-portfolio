@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LEETCODE_SOLVED } from '../data/site';
 
 const About = () => {
   return (
@@ -29,7 +30,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="about-avatar-wrapper">
-              <img src="/files/photo.webp" alt="Vaibhav Verma - Full Stack Developer" className="about-avatar-img" />
+              <img src="/files/photo.webp" alt="Vaibhav Verma - Full Stack Developer" className="about-avatar-img" width="900" height="900" loading="lazy" decoding="async" />
             </div>
             <h3 className="about-avatar-name">Vaibhav Verma</h3>
             <p className="about-avatar-title">Full Stack | MERN Developer</p>
@@ -43,7 +44,7 @@ const About = () => {
               <div className="info-row"><span className="info-lbl">Education:</span> <span className="info-val">B.Tech CS (GLA Univ.)</span></div>
               <div className="info-row"><span className="info-lbl">Location:</span> <span className="info-val">Ayodhya, India</span></div>
               <div className="info-row"><span className="info-lbl">Email:</span> <span className="info-val">vaibhav.verma.sde@gmail.com</span></div>
-              <div className="info-row"><span className="info-lbl">Availability:</span> <span className="info-val text-available">Immediate / Full-Time</span></div>
+              <div className="info-row"><span className="info-lbl">Availability:</span> <span className="info-val text-available">Internships now · Full-time from Jun 2027</span></div>
             </div>
           </motion.div>
 
@@ -64,13 +65,13 @@ const About = () => {
             </p>
 
             <p className="about-text">
-              With a disciplined problem-solving mindset backed by <strong>355+ LeetCode problems solved</strong> across data structures and algorithms, I understand the trade-offs between time and space complexity. Additionally, I actively leverage modern <strong>AI-assisted software development workflows</strong> to accelerate boilerplate implementation, explore system designs, write unit tests, and maintain high engineering velocity.
+              With a disciplined problem-solving mindset backed by <strong>{LEETCODE_SOLVED} LeetCode problems solved</strong> across data structures and algorithms, I understand the trade-offs between time and space complexity. Additionally, I actively leverage modern <strong>AI-assisted software development workflows</strong> to accelerate boilerplate implementation, explore system designs, write unit tests, and maintain high engineering velocity.
             </p>
 
             {/* Key Statistics Cards */}
             <div className="stats-grid">
               <div className="stat-card">
-                <span className="stat-number">355+</span>
+                <span className="stat-number">{LEETCODE_SOLVED}</span>
                 <span className="stat-label">LeetCode Problems</span>
               </div>
               <div className="stat-card">
