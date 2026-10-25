@@ -45,6 +45,7 @@ const Skills = () => {
             <div className="skills-grid">
               <span>Node.js</span>
               <span>Express.js</span>
+              <span>FastAPI</span>
               <span>REST API Design</span>
               <span>Authentication (JWT, Passport.js)</span>
               <span>Role-Based Access Control (RBAC)</span>
@@ -60,6 +61,7 @@ const Skills = () => {
               <span>JavaScript (ES6+)</span>
               <span>Java</span>
               <span>Python</span>
+              <span>SQL</span>
             </div>
           </motion.div>
 
@@ -68,7 +70,7 @@ const Skills = () => {
             <h3>Database & Optimization</h3>
             <div className="skills-grid">
               <span>MongoDB</span>
-              <span>SQL</span>
+              <span>PostgreSQL / MySQL</span>
               <span>Indexing & Query Optimization</span>
               <span>Data Modeling</span>
             </div>
@@ -80,8 +82,9 @@ const Skills = () => {
             <div className="skills-grid">
               <span>React.js</span>
               <span>Next.js</span>
-              <span>HTML</span>
-              <span>CSS</span>
+              <span>HTML5 & CSS3</span>
+              <span>Tailwind CSS</span>
+              <span>Bootstrap</span>
             </div>
           </motion.div>
 
@@ -92,6 +95,7 @@ const Skills = () => {
               <span>Git</span>
               <span>GitHub</span>
               <span>Postman</span>
+              <span>Vite</span>
               <span>Vercel</span>
               <span>Render</span>
               <span>AWS (EC2, S3, IAM)</span>

@@ -76,7 +76,7 @@ const Hero = () => {
 
           {/* Profile Photo Avatar Frame */}
           <div className="profile-photo-wrap">
-            <img src="/files/photo.webp" alt="Vaibhav Verma Profile Picture" className="hero-avatar-img" width="900" height="900" fetchpriority="high" decoding="async" />
+            <img src="/files/photo.webp" alt="Vaibhav Verma Profile Picture" className="hero-avatar-img" width="900" height="900" fetchPriority="high" decoding="async" />
           </div>
 
           {/* Code Window */}

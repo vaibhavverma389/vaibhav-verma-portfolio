@@ -6,9 +6,11 @@ import { LEETCODE_SOLVED } from '../data/site';
 const Contact = () => {
   const form = useRef();
   const [msg, setMsg] = useState({ text: '', type: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     setMsg({ text: 'Sending message... ⏳', type: 'info' });
 
     emailjs
@@ -16,11 +18,13 @@ const Contact = () => {
       .then(
         () => {
           setMsg({ text: 'Message sent successfully ✅', type: 'success' });
-          form.current.reset();
+          if (form.current) form.current.reset();
+          setIsSubmitting(false);
           setTimeout(() => setMsg({ text: '', type: '' }), 4000);
         },
         (error) => {
           setMsg({ text: 'Failed to send message ❌', type: 'error' });
+          setIsSubmitting(false);
           console.error('EmailJS Error:', error);
         }
       );
@@ -120,8 +124,12 @@ const Contact = () => {
                 <textarea id="user-message" name="message" rows="5" placeholder="Hi Vaibhav, we came across your portfolio and would like to discuss..." required></textarea>
               </div>
 
-              <button type="submit" className="contact-btn submit-btn">
-                Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i>
+              <button type="submit" className="contact-btn submit-btn" disabled={isSubmitting} style={{ opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}>
+                {isSubmitting ? (
+                  <>Sending... <i className="fa fa-spinner fa-spin" aria-hidden="true"></i></>
+                ) : (
+                  <>Send Message <i className="fa fa-paper-plane" aria-hidden="true"></i></>
+                )}
               </button>
               
               <span 

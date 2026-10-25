@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LEETCODE_SOLVED } from '../data/site';
+import { LEETCODE_SOLVED, PROJECTS_SHIPPED } from '../data/site';
 
 const About = () => {
   return (
@@ -75,12 +75,12 @@ const About = () => {
                 <span className="stat-label">LeetCode Problems</span>
               </div>
               <div className="stat-card">
-                <span className="stat-number">MERN</span>
-                <span className="stat-label">Core Tech Stack</span>
+                <span className="stat-number">{PROJECTS_SHIPPED}</span>
+                <span className="stat-label">Projects Shipped</span>
               </div>
               <div className="stat-card">
-                <span className="stat-number">REST</span>
-                <span className="stat-label">API Architecture</span>
+                <span className="stat-number">MERN</span>
+                <span className="stat-label">Core Tech Stack</span>
               </div>
               <div className="stat-card">
                 <span className="stat-number">AI</span>

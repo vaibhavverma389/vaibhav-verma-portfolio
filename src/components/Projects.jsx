@@ -41,7 +41,7 @@ const Projects = () => {
         >
           {/* Project 1 */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-store"></i>
+            <i className="fa fa-store" aria-hidden="true"></i>
             <h4>AI-Driven Smart Agriculture Marketplace (Digital Mandi)</h4>
 
             <div className="tech-stack">
@@ -59,7 +59,7 @@ const Projects = () => {
             </p>
 
             <ul className="project-features">
-              <li>Farmer & trader marketplace</li>
+              <li>Farmer &amp; trader marketplace</li>
               <li>Real-time bidding for transparent price discovery</li>
               <li>~25% faster API responses via MongoDB indexing</li>
               <li>AI-based price prediction</li>
@@ -67,18 +67,18 @@ const Projects = () => {
             </ul>
 
             <div className="project-links">
-              <a href="https://digital-mandi-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://digital-mandi-vaibhav.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/digital-mandi" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/digital-mandi" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
 
           {/* Project 2 */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-bus"></i>
+            <i className="fa fa-bus" aria-hidden="true"></i>
             <h4>Smart Bus Booking System</h4>
 
             <div className="tech-stack">
@@ -101,19 +101,19 @@ const Projects = () => {
             </ul>
 
             <div className="project-links">
-              <a href="https://www.thesmartbu.me" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://www.thesmartbu.me" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/bus_bookings" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/bus_bookings" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
 
           {/* Project 3 */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-user-shield"></i>
-            <h4>Secure Student Portal & Admin Analytics System</h4>
+            <i className="fa fa-user-shield" aria-hidden="true"></i>
+            <h4>Secure Student Portal &amp; Admin Analytics System</h4>
 
             <div className="tech-stack">
               <span>Node.js</span>
@@ -136,19 +136,19 @@ const Projects = () => {
             </ul>
 
             <div className="project-links">
-              <a href="https://studifyo.vercel.app" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://studifyo.vercel.app" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/nptel-assignment-help" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/nptel-assignment-help" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
 
           {/* Project 4: Link Shortener */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-link"></i>
-            <h4>Dynamic Link Shortener & Analytics Dashboard</h4>
+            <i className="fa fa-link" aria-hidden="true"></i>
+            <h4>Dynamic Link Shortener &amp; Analytics Dashboard</h4>
 
             <div className="tech-stack">
               <span>React</span>
@@ -166,24 +166,24 @@ const Projects = () => {
             </p>
 
             <ul className="project-features">
-              <li>Custom Alias & Dynamic URL Shortening</li>
-              <li>Real-time Click Analytics & Tracking</li>
-              <li>Dynamic SVG QR Code Generation & Downloader</li>
+              <li>Custom Alias &amp; Dynamic URL Shortening</li>
+              <li>Real-time Click Analytics &amp; Tracking</li>
+              <li>Dynamic SVG QR Code Generation &amp; Downloader</li>
             </ul>
 
             <div className="project-links">
-              <a href="https://linkshortner-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://linkshortner-vaibhav.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/Linkshortner" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/Linkshortner" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
 
           {/* Project 5: Student Management System */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-user-graduate"></i>
+            <i className="fa fa-user-graduate" aria-hidden="true"></i>
             <h4>Student Management System</h4>
 
             <div className="tech-stack">
@@ -200,25 +200,25 @@ const Projects = () => {
             </p>
 
             <ul className="project-features">
-              <li>Add, edit, delete & search student records</li>
+              <li>Add, edit, delete &amp; search student records</li>
               <li>Filter by department and minimum marks</li>
-              <li>Unique roll number & numeric field validation</li>
+              <li>Unique roll number &amp; numeric field validation</li>
               <li>Structured table view with dark theme UI</li>
             </ul>
 
             <div className="project-links">
-              <a href="https://student-management-system-vaibhav.vercel.app/" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://student-management-system-vaibhav.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/student-management-system" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/student-management-system" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
 
           {/* Project 6: E-Commerce Sales Analytics Dashboard */}
           <motion.div className="project" variants={itemVariants}>
-            <i className="fa fa-chart-line"></i>
+            <i className="fa fa-chart-line" aria-hidden="true"></i>
             <h4>E-Commerce Sales Analytics Dashboard</h4>
 
             <div className="tech-stack">
@@ -237,18 +237,18 @@ const Projects = () => {
             </p>
 
             <ul className="project-features">
-              <li>Revenue, KPI & sales trend analytics</li>
-              <li>Dynamic filtering, search & pagination</li>
-              <li>Customer, regional & payment insights</li>
-              <li>Cancellation/return rate & product performance tracking</li>
+              <li>Revenue, KPI &amp; sales trend analytics</li>
+              <li>Dynamic filtering, search &amp; pagination</li>
+              <li>Customer, regional &amp; payment insights</li>
+              <li>Cancellation/return rate &amp; product performance tracking</li>
             </ul>
 
             <div className="project-links">
-              <a href="https://ecommerce-sales-analytics-dashboard-ten.vercel.app" target="_blank" rel="noreferrer" className="project-btn live">
-                <i className="fa fa-globe"></i> Live
+              <a href="https://ecommerce-sales-analytics-dashboard-ten.vercel.app" target="_blank" rel="noopener noreferrer" className="project-btn live">
+                <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
-              <a href="https://github.com/vaibhavverma389/ecommerce-sales-analytics-dashboard" target="_blank" rel="noreferrer" className="project-btn github">
-                <i className="fa-brands fa-github"></i> GitHub
+              <a href="https://github.com/vaibhavverma389/ecommerce-sales-analytics-dashboard" target="_blank" rel="noopener noreferrer" className="project-btn github">
+                <i className="fa-brands fa-github" aria-hidden="true"></i> GitHub
               </a>
             </div>
           </motion.div>
