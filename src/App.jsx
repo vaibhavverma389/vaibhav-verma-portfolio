@@ -3,8 +3,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
-import Education from './components/Education';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Education from './components/Education';
 import ProblemSolving from './components/ProblemSolving';
 import AiTools from './components/AiTools';
 import Contact from './components/Contact';
@@ -24,6 +25,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Education />
         <ProblemSolving />
         <AiTools />
