@@ -7,10 +7,6 @@ const NAV = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
-  { id: 'certifications', label: 'Certifications' },
-  { id: 'education', label: 'Education' },
-  { id: 'dsa', label: 'Problem Solving' },
-  { id: 'ai-tools', label: 'AI Tools' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -94,7 +90,7 @@ const Header = () => {
 
             <button
               className="menu_icon"
-              aria-label="Toggle navigation menu"
+              aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={menuOpen}
               aria-controls="primary-nav"
               style={{ background: 'none', border: 'none', cursor: 'pointer' }}
