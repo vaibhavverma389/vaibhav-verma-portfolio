@@ -10,6 +10,8 @@ const NAV = [
   { id: 'contact', label: 'Contact' },
 ];
 
+const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'certifications', 'education', 'dsa', 'ai-tools', 'contact'];
+
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +27,7 @@ const Header = () => {
 
   // Scroll-spy: highlight the section currently in view
   useEffect(() => {
-    const sections = NAV.map((n) => document.getElementById(n.id)).filter(Boolean);
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(Boolean);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
