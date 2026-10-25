@@ -368,6 +368,13 @@ body { line-height: 1.65; }
 .header ul li a { font-size: 13px; color: #cbd5e1; }
 .header ul li a::after { bottom: -8px; }
 .header ul li a.active { color: #fff; }
+.header ul li a.active::after { width: 100%; }
+.header-actions { flex-shrink: 0; }
+.profile-text .social a { transition: color .2s ease, transform .2s ease, border-color .2s ease; }
+.profile-text .social a:hover { transform: translateY(-2px); }
+.project-btn, .contact-info-card, .cert-btn-action { min-height: 44px; }
+.cert-tab-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.contact-form-card input, .contact-form-card textarea { font: inherit; }
 .btn-resume-nav { padding: 8px 14px; }
 .header .menu_icon { min-width: 42px; min-height: 42px; border-radius: 12px !important; background: var(--surface-raised) !important; }
 
