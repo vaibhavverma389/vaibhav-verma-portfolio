@@ -101,7 +101,7 @@ const Projects = () => {
             </ul>
 
             <div className="project-links">
-              <a href="https://www.thesmartbu.me" target="_blank" rel="noopener noreferrer" className="project-btn live">
+              <a href="https://bus-bookings-project.vercel.app" target="_blank" rel="noopener noreferrer" className="project-btn live">
                 <i className="fa fa-globe" aria-hidden="true"></i> Live
               </a>
               <a href="https://github.com/vaibhavverma389/bus_bookings" target="_blank" rel="noopener noreferrer" className="project-btn github">
